@@ -1,0 +1,2 @@
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollectorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollectorContent\obj\x86\Debug\ResolveAssemblyReference.cache

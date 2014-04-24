@@ -1,0 +1,21 @@
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\GarbageCollector.exe
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\GarbageCollector.pdb
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.exe
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.pdb
+C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\Desert.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\Desert.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\GarbageCollector.exe
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\GarbageCollector.pdb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.exe
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.pdb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\EzekielJackson4.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sampah-1.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sampah-2.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sampah-3.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\tongsampah-1.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\tongsampah-2.xnb
+E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\tongsampah-3.xnb

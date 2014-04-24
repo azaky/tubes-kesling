@@ -1,0 +1,8 @@
+Content\Desert.xnb
+Content\EzekielJackson4.xnb
+Content\img\sampah-1.xnb
+Content\img\sampah-2.xnb
+Content\img\sampah-3.xnb
+Content\img\tongsampah-1.xnb
+Content\img\tongsampah-2.xnb
+Content\img\tongsampah-3.xnb
