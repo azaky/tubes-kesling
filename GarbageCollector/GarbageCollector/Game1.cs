@@ -45,8 +45,10 @@ namespace GarbageCollector
             SceneManager.Initialize();
             SceneManager.AddScene(new MainMenu(GraphicsDevice, this));
             SceneManager.AddScene(new OrganizeTrash(GraphicsDevice, this,12,12));
+            SceneManager.AddScene(new CollectTrash(GraphicsDevice, this));
             //SceneManager.Switch("MainMenu");
-            SceneManager.Switch("OrganizeTrash");
+            //SceneManager.Switch("OrganizeTrash");
+            SceneManager.Switch("CollectTrash");
             base.Initialize();
         }
 

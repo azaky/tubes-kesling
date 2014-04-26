@@ -102,7 +102,7 @@ namespace GarbageCollector
         {
             if (TrashImage.images.ContainsKey(name))
             {
-                System.Diagnostics.Debug.WriteLine("ok");
+                //System.Diagnostics.Debug.WriteLine("ok");
                 return TrashImage.images[name];
             }
             else

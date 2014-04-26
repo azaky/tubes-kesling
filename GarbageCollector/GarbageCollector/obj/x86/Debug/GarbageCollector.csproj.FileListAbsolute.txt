@@ -22,3 +22,21 @@ E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Conten
 E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\organic-bin.xnb
 E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bg-trashorganizer.xnb
 E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\cursor-organize.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\apple.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\banana.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bottle.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\can.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\leaf.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\snack.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\inorganic-bin.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\organic-bin.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bg-trashorganizer.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\cursor-organize.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\font\hugmetight.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\GarbageCollector.exe
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\GarbageCollector.pdb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.csprojResolveAssemblyReference.cache
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.exe
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.pdb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\character.xnb

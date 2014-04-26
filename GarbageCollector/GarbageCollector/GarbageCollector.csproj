@@ -107,11 +107,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Scene.cs" />
     <Compile Include="SceneManager.cs" />
+    <Compile Include="Scene\CollectTrash.cs" />
     <Compile Include="TrashOrganizer\Trashbin.cs" />
     <Compile Include="Scene\OrganizeTrash.cs" />
     <Compile Include="Scene\MainMenu.cs" />

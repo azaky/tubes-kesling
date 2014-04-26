@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>img\apple.png</Source>
+      <Name>img\apple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\apple.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\banana.png</Source>
+      <Name>img\banana</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\banana.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\bottle.png</Source>
+      <Name>img\bottle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bottle.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\can.png</Source>
+      <Name>img\can</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\can.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\leaf.png</Source>
+      <Name>img\leaf</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\leaf.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\snack.png</Source>
+      <Name>img\snack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\snack.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\inorganic-bin.png</Source>
+      <Name>img\inorganic-bin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\inorganic-bin.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\organic-bin.png</Source>
+      <Name>img\organic-bin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\organic-bin.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\bg-trashorganizer.jpg</Source>
+      <Name>img\bg-trashorganizer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bg-trashorganizer.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\cursor-organize.png</Source>
+      <Name>img\cursor-organize</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\cursor-organize.xnb</Output>
+      <Time>2014-04-26T11:16:52+07:00</Time>
+    </Item>
+    <Item>
+      <Source>font\hugmetight.spritefont</Source>
+      <Name>font\hugmetight</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\font\hugmetight.xnb</Output>
+      <Time>2014-04-26T11:16:52.3562261+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\character.png</Source>
+      <Name>img\character</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\character.xnb</Output>
+      <Time>2014-04-26T12:40:52+07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{29FE9870-54D2-40C1-89AD-5D576752F661}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollectorContent\</RootDirectory>
+      <LoggerRootDirectory>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-04-17T20:10:37.5078741+07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

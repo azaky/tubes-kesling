@@ -1,2 +1,3 @@
 C:\Kuliah\Semester 4\Kesehatan Lingkungan\Tugas\GarbageCollector\GarbageCollector\GarbageCollectorContent\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\tubes\GarbageCollector\GarbageCollector\GarbageCollectorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollectorContent\obj\x86\Debug\GarbageCollectorContent.contentprojResolveAssemblyReference.cache
