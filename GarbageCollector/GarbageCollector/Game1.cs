@@ -44,9 +44,8 @@ namespace GarbageCollector
             // TODO: Add your initialization logic here
             SceneManager.Initialize();
             SceneManager.AddScene(new MainMenu(GraphicsDevice, this));
-            SceneManager.AddScene(new OrganizeTrash(GraphicsDevice, this));
+            SceneManager.AddScene(new OrganizeTrash(GraphicsDevice, this,12,12));
             //SceneManager.Switch("MainMenu");
-            this.IsMouseVisible = true;
             SceneManager.Switch("OrganizeTrash");
             base.Initialize();
         }

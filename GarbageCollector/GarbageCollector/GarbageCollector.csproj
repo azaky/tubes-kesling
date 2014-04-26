@@ -116,6 +116,7 @@
     <Compile Include="Scene\OrganizeTrash.cs" />
     <Compile Include="Scene\MainMenu.cs" />
     <Compile Include="TrashOrganizer\Trash.cs" />
+    <Compile Include="TrashOrganizer\TrashImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

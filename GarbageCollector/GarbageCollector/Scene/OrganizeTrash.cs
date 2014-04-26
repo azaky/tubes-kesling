@@ -18,41 +18,91 @@ namespace GarbageCollector
     {
         private Texture2D bgTexture;
         private List<Trash> trashes;
-        private List<Texture2D> textures;
+        private List<Trashbin> trashbins;
+        private TrashImage trashImage;
 
-        public OrganizeTrash(GraphicsDevice dev, Game game)
+        //private List<Texture2D> textures;
+        private int score;
+        SpriteFont spriteFont;
+        private int norganic, ninorganic;
+
+        public int Norganic { get { return this.norganic; } set { this.norganic = value; } }
+        public int Ninorganic { get { return this.ninorganic; } set { this.ninorganic = value; } } 
+
+        public OrganizeTrash(GraphicsDevice dev, Game game,int norganic,int ninorganic)
         {
             device = dev;
             name = "OrganizeTrash";
             content = game.Content;
             trashes = new List<Trash>();
-            textures = new List<Texture2D>();
+            trashbins = new List<Trashbin>();
+            trashImage = new TrashImage(game);
+            //spriteFont = new SpriteFont();
+            this.Norganic = norganic;
+            this.Ninorganic = ninorganic;
         }
 
+        public void SetPosition()
+        {
+            int x,y,dx,dy;
+            int min_x,max_x,min_y,max_y;
+            min_x = 5; max_x = 700;
+            min_y = 5; max_y = 400;
+            x = 5; y = 5;
+            dx = 130; dy = 130;
+            for (int i = 0; i < trashes.Count; i++)
+            {
+                trashes[i].RectDraw = TrashImage.GetSize(trashes[i].Name);
+                trashes[i].RectDraw = new Rectangle(x,y, trashes[i].RectDraw.Width, trashes[i].RectDraw.Height);
+                y += dy;
+                if (y > max_y)
+                {
+                    y = min_y; x += dx;
+                    if (x > max_x)
+                    {
+                        x = min_x;
+                    }
+                }
+            }
+            for (int i = 0; i < 2; ++i)
+            {
+                trashbins[i].RectDraw = TrashImage.GetSize(trashbins[i].Name);
+                trashbins[i].RectDraw = new Rectangle(i*500 + 100, 500, trashbins[i].RectDraw.Width, trashbins[i].RectDraw.Height);
+            }
+        }
         public override void Initialize()
         {
             this.LoadContent();
-            //load 6 buah sampah
-            for (int i = 0; i < 6; ++i)
+            //load sebanyak organic dan inorganic
+            for (int i = 0; i < norganic + ninorganic; ++i)
             {
+                
                 Trash t = new Trash();
-                t.RectDraw = new Rectangle(400,10+i*100,100,100);
-                t.Pos = new Vector2(400, 10 + i * 105);
-                t.TextureId = i % 3;
+                t.Type = (i < norganic) ? TrashType.ORGANIC : TrashType.INORGANIC;
+                t.Name = TrashImage.GetRandomImageName(t.Type);
+                //t.RectDraw = new Rectangle(10+i*100,400,100,100);
+                //t.Pos = new Vector2(10 + i * 105,10);
                 trashes.Add(t);
+                System.Diagnostics.Debug.WriteLine(t.Name);
             }
+            //load 2 tong
+            Trashbin tb = new Trashbin(3, 0);
+            tb.Name = "organic-bin";
+            tb.Type = TrashType.ORGANIC;
+            trashbins.Add(tb);
+
+            tb = new Trashbin(3, 0);
+            tb.Name = "inorganic-bin";
+            tb.Type = TrashType.INORGANIC;
+            trashbins.Add(tb);
+            SetPosition();
         }
 
         public void LoadContent()
         {
             spriteBatch = new SpriteBatch(device);
-            bgTexture = content.Load<Texture2D>("EzekielJackson4");
-            textures.Add(content.Load<Texture2D>("img/sampah-1"));
-            textures.Add(content.Load<Texture2D>("img/sampah-2"));
-            textures.Add(content.Load<Texture2D>("img/sampah-3"));
-            textures.Add(content.Load<Texture2D>("img/tongsampah-1"));
-            textures.Add(content.Load<Texture2D>("img/tongsampah-2"));
-            textures.Add(content.Load<Texture2D>("img/tongsampah-3"));
+            spriteFont = content.Load<SpriteFont>("font/hugmetight");
+            trashImage.LoadResources();
         }
         public override void Shutdown()
         {
@@ -62,19 +112,42 @@ namespace GarbageCollector
         {
             
             spriteBatch.Begin();
-            //spriteBatch.Draw(bgTexture, new Rectangle(0, 0, 800, 600), Color.White);
-            int i = 0;
+            spriteBatch.Draw(TrashImage.GetImage("bg-organize"), new Rectangle(0, 0, 800, 600), Color.White);
             foreach(var trash in trashes)
             {
-                spriteBatch.Draw(textures[trash.TextureId], trash.RectDraw, Color.White);
-                if (i == 0) 
-                    System.Diagnostics.Debug.WriteLine(trash.RectDraw.X + " " + trash.RectDraw.Y);
-                i++;
+                
+                if (trash.Status != TrashStatus.DISPOSED)
+                    spriteBatch.Draw(TrashImage.GetImage(trash.Name), trash.RectDraw,Color.White);
+            
             }
+            foreach (var trashbin in trashbins)
+            {
+                spriteBatch.Draw(TrashImage.GetImage(trashbin.Name), trashbin.RectDraw, Color.White);
+            }
+            spriteBatch.DrawString(spriteFont, "Score : "+this.score.ToString(), new Vector2(350, 0), Color.Black);
+            spriteBatch.Draw(TrashImage.GetImage("cursor-organize"), TrashImage.GetSize("cursor-organize"), Color.White);
             spriteBatch.End();
         }
         public override void Update(GameTime gametime)
         {
+            foreach(var trash in trashes)//(int i = 0; i < trashes.Count; i++)
+            {
+                //var trash = trashes[i];
+                if (trash.Status == TrashStatus.SELECTED)
+                {
+                    foreach (var trashbin in trashbins)
+                    {
+                        if (trashbin.RectDraw.Intersects(trash.RectDraw))
+                        {
+                            this.score += trashbin.Score(trash);
+                            Trash.hasSelected = false;
+                            trash.Status = TrashStatus.DISPOSED;
+                            break;
+                        }
+                    }
+                }
+                
+            }
             base.Update(gametime);
         }
     }

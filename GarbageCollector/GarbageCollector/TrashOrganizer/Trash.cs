@@ -15,13 +15,13 @@ using System.Diagnostics;
 namespace GarbageCollector
 {
     
-    enum TrashStatus
+    public enum TrashStatus
     {
         IDLE, SELECTED, DISPOSED
     }
-    enum TrashType
+    public enum TrashType
     {
-        ORGANIC,PAPER,PLASTIC
+        ORGANIC,INORGANIC
     }
     class Trash
     {
@@ -35,7 +35,15 @@ namespace GarbageCollector
         private TrashStatus status;
         private Rectangle rectDraw;
         public static bool hasSelected; //cuman satu yang bisa diselected
+        private TrashType type;
+        private string name;
 
+        public string Name { get { return this.name; } set { this.name = value; } }
+        public TrashType Type
+        {
+            get { return this.type; }
+            set { this.type = value; }
+        }
         public Vector2 Pos
         {
             get { return this.pos; }
@@ -79,7 +87,7 @@ namespace GarbageCollector
                 case TrashStatus.DISPOSED:
                     break;
                 case TrashStatus.SELECTED:
-                    if (!isLeftPressed || !isMouseInObject)
+                    if (!isLeftPressed)
                     {
                         this.status = TrashStatus.IDLE;
                         hasSelected = false;

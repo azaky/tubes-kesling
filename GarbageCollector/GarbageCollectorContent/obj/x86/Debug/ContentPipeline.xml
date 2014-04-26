@@ -2,76 +2,103 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Desert.jpg</Source>
-      <Name>Desert</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>font\hugmetight.spritefont</Source>
+      <Name>font\hugmetight</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\Desert.xnb</Output>
-      <Time>2009-07-14T11:52:24+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\font\hugmetight.xnb</Output>
+      <Time>2014-04-25T07:40:31.6167207+07:00</Time>
     </Item>
     <Item>
-      <Source>EzekielJackson4.png</Source>
-      <Name>EzekielJackson4</Name>
+      <Source>img\apple.png</Source>
+      <Name>img\apple</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\EzekielJackson4.xnb</Output>
-      <Time>2014-03-19T22:38:32.9744576+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\apple.xnb</Output>
+      <Time>2014-04-25T22:46:12.697648+07:00</Time>
     </Item>
     <Item>
-      <Source>img\sampah-1.png</Source>
-      <Name>img\sampah-1</Name>
+      <Source>img\banana.png</Source>
+      <Name>img\banana</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sampah-1.xnb</Output>
-      <Time>2014-04-24T21:44:23.0507259+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\banana.xnb</Output>
+      <Time>2014-04-25T22:28:19.4742631+07:00</Time>
     </Item>
     <Item>
-      <Source>img\sampah-2.png</Source>
-      <Name>img\sampah-2</Name>
+      <Source>img\bottle.png</Source>
+      <Name>img\bottle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sampah-2.xnb</Output>
-      <Time>2014-04-24T21:44:47.3411152+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bottle.xnb</Output>
+      <Time>2014-04-25T22:27:11.0393489+07:00</Time>
     </Item>
     <Item>
-      <Source>img\sampah-3.png</Source>
-      <Name>img\sampah-3</Name>
+      <Source>img\can.png</Source>
+      <Name>img\can</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sampah-3.xnb</Output>
-      <Time>2014-04-24T21:45:12.1595348+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\can.xnb</Output>
+      <Time>2014-04-25T22:27:49.8815705+07:00</Time>
     </Item>
     <Item>
-      <Source>img\tongsampah-1.png</Source>
-      <Name>img\tongsampah-1</Name>
+      <Source>img\leaf.png</Source>
+      <Name>img\leaf</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\tongsampah-1.xnb</Output>
-      <Time>2014-04-24T21:45:46.1424785+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\leaf.xnb</Output>
+      <Time>2014-04-25T22:24:32.850301+07:00</Time>
     </Item>
     <Item>
-      <Source>img\tongsampah-2.png</Source>
-      <Name>img\tongsampah-2</Name>
+      <Source>img\snack.png</Source>
+      <Name>img\snack</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\tongsampah-2.xnb</Output>
-      <Time>2014-04-24T21:46:03.1024485+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\snack.xnb</Output>
+      <Time>2014-04-25T23:03:07.1486713+07:00</Time>
     </Item>
     <Item>
-      <Source>img\tongsampah-3.png</Source>
-      <Name>img\tongsampah-3</Name>
+      <Source>img\inorganic-bin.png</Source>
+      <Name>img\inorganic-bin</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\tongsampah-3.xnb</Output>
-      <Time>2014-04-24T21:46:18.3323196+07:00</Time>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\inorganic-bin.xnb</Output>
+      <Time>2014-04-26T07:40:45.8587528+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\organic-bin.png</Source>
+      <Name>img\organic-bin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\organic-bin.xnb</Output>
+      <Time>2014-04-26T07:41:11.9112429+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\bg-trashorganizer.jpg</Source>
+      <Name>img\bg-trashorganizer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\bg-trashorganizer.xnb</Output>
+      <Time>2014-04-26T07:16:59.6011755+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\cursor-organize.png</Source>
+      <Name>img\cursor-organize</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\tubes\GarbageCollector\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\cursor-organize.xnb</Output>
+      <Time>2014-04-26T07:23:25.7562623+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
