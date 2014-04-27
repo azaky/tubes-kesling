@@ -10,3 +10,8 @@ Content\img\bg-trashorganizer.xnb
 Content\img\cursor-organize.xnb
 Content\font\hugmetight.xnb
 Content\img\character.xnb
+Content\img\sidewalk.xnb
+Content\img\sidewalk_tile.xnb
+Content\img\asphalt.xnb
+Content\img\black_tile.xnb
+Content\img\white_tile.xnb

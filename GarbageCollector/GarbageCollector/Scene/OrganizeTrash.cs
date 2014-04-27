@@ -25,6 +25,7 @@ namespace GarbageCollector
         private int score;
         SpriteFont spriteFont;
         private int norganic, ninorganic;
+        public static List<Trash> _trashes = null;
 
         public int Norganic { get { return this.norganic; } set { this.norganic = value; } }
         public int Ninorganic { get { return this.ninorganic; } set { this.ninorganic = value; } } 
@@ -73,18 +74,18 @@ namespace GarbageCollector
         public override void Initialize()
         {
             this.LoadContent();
-            //load sebanyak organic dan inorganic
-            for (int i = 0; i < norganic + ninorganic; ++i)
+
+            Trash.hasSelected = false;
+            trashes = _trashes;
+            if (trashes == null)
             {
-                
-                Trash t = new Trash();
-                t.Type = (i < norganic) ? TrashType.ORGANIC : TrashType.INORGANIC;
-                t.Name = TrashImage.GetRandomImageName(t.Type);
-                //t.RectDraw = new Rectangle(10+i*100,400,100,100);
-                //t.Pos = new Vector2(10 + i * 105,10);
-                trashes.Add(t);
-                System.Diagnostics.Debug.WriteLine(t.Name);
+                trashes = new List<Trash>();
             }
+            foreach (var trash in trashes)
+            {
+                trash.Status = TrashStatus.IDLE;
+            }
+            
             //load 2 tong
             Trashbin tb = new Trashbin(3, 0);
             tb.Name = "organic-bin";
@@ -115,10 +116,19 @@ namespace GarbageCollector
             spriteBatch.Draw(TrashImage.GetImage("bg-organize"), new Rectangle(0, 0, 800, 600), Color.White);
             foreach(var trash in trashes)
             {
-                
+
                 if (trash.Status != TrashStatus.DISPOSED)
-                    spriteBatch.Draw(TrashImage.GetImage(trash.Name), trash.RectDraw,Color.White);
-            
+                {
+                    if (trash.Status == TrashStatus.IDLE)
+                        spriteBatch.Draw(TrashImage.GetImage(trash.Name), trash.RectDraw, Color.White);
+                    else
+                    {
+                        Rectangle rect = trash.RectDraw;
+                        rect.Width *= 3; rect.Width /= 2;
+                        rect.Height *= 3; rect.Height /= 2;
+                        spriteBatch.Draw(TrashImage.GetImage(trash.Name), rect, Color.White);
+                    }
+                }
             }
             foreach (var trashbin in trashbins)
             {
@@ -132,7 +142,6 @@ namespace GarbageCollector
         {
             foreach(var trash in trashes)//(int i = 0; i < trashes.Count; i++)
             {
-                //var trash = trashes[i];
                 if (trash.Status == TrashStatus.SELECTED)
                 {
                     foreach (var trashbin in trashbins)
@@ -146,7 +155,6 @@ namespace GarbageCollector
                         }
                     }
                 }
-                
             }
             base.Update(gametime);
         }

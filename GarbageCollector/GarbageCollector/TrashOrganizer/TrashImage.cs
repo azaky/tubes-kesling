@@ -61,7 +61,7 @@ namespace GarbageCollector
         static int lastRandom = 0;
         public static string GetRandomImageName(TrashType type)
         {
-            Random rnd = new Random();
+            Random rnd = new Random((int)DateTime.Now.Ticks);
             int val = lastRandom + rnd.Next(0, 10);
             val = val % 3; lastRandom = val;
             if (type == TrashType.ORGANIC){

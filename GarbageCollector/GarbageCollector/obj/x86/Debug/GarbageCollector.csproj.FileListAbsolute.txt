@@ -40,3 +40,8 @@ E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\Garbag
 E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.exe
 E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\obj\x86\Debug\GarbageCollector.pdb
 E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\character.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sidewalk.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sidewalk_tile.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\asphalt.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\black_tile.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\white_tile.xnb

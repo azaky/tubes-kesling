@@ -109,6 +109,51 @@
       <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\character.xnb</Output>
       <Time>2014-04-26T12:40:52+07:00</Time>
     </Item>
+    <Item>
+      <Source>img\sidewalk.jpg</Source>
+      <Name>img\sidewalk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sidewalk.xnb</Output>
+      <Time>2014-04-27T14:23:16.6726848+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\sidewalk_tile.jpg</Source>
+      <Name>img\sidewalk_tile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\sidewalk_tile.xnb</Output>
+      <Time>2014-04-27T14:35:08.4593967+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\asphalt.jpg</Source>
+      <Name>img\asphalt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\asphalt.xnb</Output>
+      <Time>2014-04-27T14:58:31.6486545+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\black_tile.png</Source>
+      <Name>img\black_tile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\black_tile.xnb</Output>
+      <Time>2014-04-27T15:14:23.8721186+07:00</Time>
+    </Item>
+    <Item>
+      <Source>img\white_tile.png</Source>
+      <Name>img\white_tile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\white_tile.xnb</Output>
+      <Time>2014-04-27T15:14:17.0527285+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{29FE9870-54D2-40C1-89AD-5D576752F661}</ContentProjectGUID>
