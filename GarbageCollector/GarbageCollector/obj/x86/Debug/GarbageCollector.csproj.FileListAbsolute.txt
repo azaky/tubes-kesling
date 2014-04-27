@@ -46,3 +46,5 @@ E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\Garbag
 E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\black_tile.xnb
 E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\img\white_tile.xnb
 E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\sfx\smw_coin.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\sfx\correct.xnb
+E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\sfx\incorrect.xnb

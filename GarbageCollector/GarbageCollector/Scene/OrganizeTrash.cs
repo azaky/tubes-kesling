@@ -27,6 +27,8 @@ namespace GarbageCollector
         private int norganic, ninorganic;
         public static List<Trash> _trashes = null;
 
+        private SoundManager sm;
+
         public int Norganic { get { return this.norganic; } set { this.norganic = value; } }
         public int Ninorganic { get { return this.ninorganic; } set { this.ninorganic = value; } } 
 
@@ -41,6 +43,7 @@ namespace GarbageCollector
             //spriteFont = new SpriteFont();
             this.Norganic = norganic;
             this.Ninorganic = ninorganic;
+            sm = new SoundManager();
         }
 
         public void SetPosition()
@@ -97,6 +100,8 @@ namespace GarbageCollector
             tb.Type = TrashType.INORGANIC;
             trashbins.Add(tb);
             SetPosition();
+
+            sm.LoadBanks();
         }
 
         public void LoadContent()
@@ -151,6 +156,14 @@ namespace GarbageCollector
                             this.score += trashbin.Score(trash);
                             Trash.hasSelected = false;
                             trash.Status = TrashStatus.DISPOSED;
+                            if (trashbin.Score(trash) > 0)
+                            {
+                                sm.CueEffect(1);
+                            }
+                            else
+                            {
+                                sm.CueEffect(2);
+                            }
                             break;
                         }
                     }

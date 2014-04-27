@@ -64,6 +64,7 @@ namespace GarbageCollector
             Random rnd = new Random((int)DateTime.Now.Ticks);
             int val = lastRandom + rnd.Next(0, 10);
             val = val % 3; lastRandom = val;
+            val = rnd.Next(3);
             if (type == TrashType.ORGANIC){
                 switch(val){
                     case 0: return "apple"; 

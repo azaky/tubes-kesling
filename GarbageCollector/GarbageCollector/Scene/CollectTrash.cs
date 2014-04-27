@@ -19,7 +19,7 @@ namespace GarbageCollector
         private const float TRASH_SPEED = 250;
         private const float TRASH_FREQUENCY = 1f;
         private const float CHAR_SPEED = 250;
-        private const int GAME_TIME = 5;
+        private const int GAME_TIME = 30;
         private const int TILE_SIZE = 80;
 
         private SoundManager sm;
@@ -62,7 +62,7 @@ namespace GarbageCollector
 
             characterPosition = new Vector2(50, 100);
             leftTile = 0;
-            leftBin = (int)(TRASH_SPEED * GAME_TIME);
+            leftBin = (int)(TRASH_SPEED * 5);
             parity = 0;
 
             Trash.hasSelected = true;
@@ -159,7 +159,10 @@ namespace GarbageCollector
                 leftTile += TILE_SIZE;
                 parity = 1 - parity;
             }
-            leftBin -= (int)((float)gametime.ElapsedGameTime.TotalSeconds * TRASH_SPEED);
+            if ((GAME_TIME - gametime.TotalGameTime.TotalSeconds) <= 5)
+            {
+                leftBin -= (int)((float)gametime.ElapsedGameTime.TotalSeconds * TRASH_SPEED);
+            }
 
             Rectangle bound = new Rectangle((int)characterPosition.X, (int)characterPosition.Y, character.RectDraw.Width, character.RectDraw.Height);
             foreach (var trash in trashes)//(int i = 0; i < trashes.Count; i++)
@@ -197,9 +200,6 @@ namespace GarbageCollector
 
             //make some new trashes
             Random rnd = new Random((int)DateTime.Now.Ticks);
-            //Debug.WriteLine("Ticks = " + (int)DateTime.Now.Ticks);
-            //Debug.WriteLine("humbala = " + (60000 * gametime.TotalGameTime.Minutes + 1000 * gametime.TotalGameTime.Seconds + gametime.TotalGameTime.Milliseconds));
-            //Debug.WriteLine("huba = " + gametime.ElapsedGameTime.TotalSeconds);
             if (rnd.NextDouble() < TRASH_FREQUENCY * gametime.ElapsedGameTime.TotalSeconds)
             {
                 Trash t = new Trash();

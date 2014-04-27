@@ -140,8 +140,8 @@ namespace GarbageCollector
             MediaPlayer.IsRepeating = true;
 
             SoundBanks = new Song[0];
-            EffectBanks = new SoundEffect[1];
-            SoundInstance = new SoundEffectInstance[1];
+            EffectBanks = new SoundEffect[3];
+            SoundInstance = new SoundEffectInstance[3];
             
             /*
             SoundBanks[0] = content.Load<Song>("Music\\song1");
@@ -154,10 +154,12 @@ namespace GarbageCollector
             iEffectBank = 0;
 
             EffectBanks[0] = content.Load<SoundEffect>("sfx/smw_coin");
-            //EffectBanks[1] = content.Load<SoundEffect>("Music\\effect2");
+            EffectBanks[1] = content.Load<SoundEffect>("sfx/correct");
+            EffectBanks[2] = content.Load<SoundEffect>("sfx/incorrect");
 
             SoundInstance[0] = EffectBanks[0].CreateInstance();
-            //SoundInstance[1] = EffectBanks[1].CreateInstance();
+            SoundInstance[1] = EffectBanks[1].CreateInstance();
+            SoundInstance[2] = EffectBanks[2].CreateInstance();
             
         }
     }

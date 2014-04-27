@@ -163,6 +163,24 @@
       <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\sfx\smw_coin.xnb</Output>
       <Time>2014-04-27T20:16:19.9014793+07:00</Time>
     </Item>
+    <Item>
+      <Source>sfx\correct.wav</Source>
+      <Name>sfx\correct</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\sfx\correct.xnb</Output>
+      <Time>2014-04-27T22:46:27.3776775+07:00</Time>
+    </Item>
+    <Item>
+      <Source>sfx\incorrect.wav</Source>
+      <Name>sfx\incorrect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dropbox\ITB\IF\TL2105 - Kesehatan Lingkungan\tugas besar\tubes-kesling\GarbageCollector\GarbageCollector\bin\x86\Debug\Content\sfx\incorrect.xnb</Output>
+      <Time>2014-04-27T22:46:32.1309494+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{29FE9870-54D2-40C1-89AD-5D576752F661}</ContentProjectGUID>

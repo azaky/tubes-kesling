@@ -16,3 +16,5 @@ Content\img\asphalt.xnb
 Content\img\black_tile.xnb
 Content\img\white_tile.xnb
 Content\sfx\smw_coin.xnb
+Content\sfx\correct.xnb
+Content\sfx\incorrect.xnb
