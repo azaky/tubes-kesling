@@ -19,9 +19,10 @@ namespace GarbageCollector
         private const float TRASH_SPEED = 250;
         private const float TRASH_FREQUENCY = 1f;
         private const float CHAR_SPEED = 250;
-        private const int GAME_TIME = 30;
+        private const int GAME_TIME = 5;
         private const int TILE_SIZE = 80;
 
+        private SoundManager sm;
         private Texture2D sidewalk;
         private Texture2D asphalt;
         private Texture2D whiteTile;
@@ -34,9 +35,11 @@ namespace GarbageCollector
         private List<Trash> trashes;
         private List<Trash> collected;
         private TrashImage trashImage;
+        private List<Trashbin> trashbins;
 
         private int Norganik, Ninorganik;
         private int leftTile;
+        private int leftBin;
         private int parity;
         
         public CollectTrash(GraphicsDevice dev, Game game)
@@ -48,6 +51,8 @@ namespace GarbageCollector
             trashes = new List<Trash>();
             collected = new List<Trash>();
             trashImage = new TrashImage(game);
+            trashbins = new List<Trashbin>();
+            sm = new SoundManager();
         }
 
         public override void Initialize()
@@ -57,9 +62,23 @@ namespace GarbageCollector
 
             characterPosition = new Vector2(50, 100);
             leftTile = 0;
+            leftBin = (int)(TRASH_SPEED * GAME_TIME);
             parity = 0;
 
             Trash.hasSelected = true;
+
+            Trashbin tb = new Trashbin(3, 0);
+            tb.Name = "organic-bin";
+            tb.Type = TrashType.ORGANIC;
+            trashbins.Add(tb);
+
+            tb = new Trashbin(3, 0);
+            tb.Name = "inorganic-bin";
+            tb.Type = TrashType.INORGANIC;
+            trashbins.Add(tb);
+
+            //sound effects
+            sm.LoadBanks();
         }
 
         public void LoadContent()
@@ -107,18 +126,27 @@ namespace GarbageCollector
                 if (trash.Status != TrashStatus.DISPOSED)
                     spriteBatch.Draw(TrashImage.GetImage(trash.Name), trash.RectDraw, Color.White);
             }
-            spriteBatch.Draw(TrashImage.GetImage("cursor-organize"), TrashImage.GetSize("cursor-organize"), Color.White);
-//            spriteBatch.Draw(TrashImage.GetImage("bg-organize"), new Rectangle(0, 0, 800, 600), Color.White);
 
-            spriteBatch.DrawString(spriteFont, "Organik : " + Norganik + ", Inorganik : " + Ninorganik, new Vector2(350, 0), Color.White);
-            spriteBatch.DrawString(spriteFont, "Waktu   : " + (GAME_TIME - gametime.TotalGameTime.Seconds) + " detik", new Vector2(150, 0), Color.White);
+            foreach (var trashbin in trashbins)
+            {
+                trashbin.RectDraw = new Rectangle(trashbin.Type == TrashType.ORGANIC ? leftBin + 70 : leftBin + 150, 90, TrashImage.GetSize(trashbin.Name).Width, TrashImage.GetSize(trashbin.Name).Height);
+                if (trashbin.RectDraw.X < 800)
+                {
+                    spriteBatch.Draw(TrashImage.GetImage(trashbin.Name), trashbin.RectDraw, Color.White);
+                }
+            }
+
+            spriteBatch.Draw(TrashImage.GetImage("cursor-organize"), TrashImage.GetSize("cursor-organize"), Color.White);
+
+            //spriteBatch.DrawString(spriteFont, "Organik : " + Norganik + ", Inorganik : " + Ninorganik, new Vector2(350, 0), Color.White);
+            spriteBatch.DrawString(spriteFont, "Waktu   : " + (GAME_TIME - gametime.TotalGameTime.Seconds) + " detik", new Vector2(550, 0), Color.White);
 
             spriteBatch.End();
         }
 
         public override void Update(GameTime gametime)
         {
-            //Kalo udah 10 detik, ganti scene
+            //Kalo udah abis, ganti scene
             if (gametime.TotalGameTime.Seconds >= GAME_TIME)
             {
                 OrganizeTrash._trashes = collected;
@@ -131,6 +159,7 @@ namespace GarbageCollector
                 leftTile += TILE_SIZE;
                 parity = 1 - parity;
             }
+            leftBin -= (int)((float)gametime.ElapsedGameTime.TotalSeconds * TRASH_SPEED);
 
             Rectangle bound = new Rectangle((int)characterPosition.X, (int)characterPosition.Y, character.RectDraw.Width, character.RectDraw.Height);
             foreach (var trash in trashes)//(int i = 0; i < trashes.Count; i++)
@@ -142,8 +171,6 @@ namespace GarbageCollector
                     position.X -= (int) (TRASH_SPEED * (float)gametime.ElapsedGameTime.TotalSeconds);
                     trash.RectDraw = position;
 
-                    //System.Diagnostics.Debug.WriteLine("bound(" + bound.X + ", " + bound.Y + ", " + bound.Width + ", " + bound.Height + "), " +
-                    //    "trash(" + trash.RectDraw.X + ", " + trash.RectDraw.Y + ", " + trash.RectDraw.Width + ", " + trash.RectDraw.Height + ")");
                     if (bound.Intersects(trash.RectDraw))
                     {
                         trash.Status = TrashStatus.DISPOSED;
@@ -156,6 +183,8 @@ namespace GarbageCollector
                         {
                             Ninorganik++;
                         }
+                        //bunyi?
+                        sm.CueEffect(0);
                     }
 
                     //hancurin kalo udah nggak keliatan
@@ -168,7 +197,7 @@ namespace GarbageCollector
 
             //make some new trashes
             Random rnd = new Random((int)DateTime.Now.Ticks);
-            Debug.WriteLine("Ticks = " + (int)DateTime.Now.Ticks);
+            //Debug.WriteLine("Ticks = " + (int)DateTime.Now.Ticks);
             //Debug.WriteLine("humbala = " + (60000 * gametime.TotalGameTime.Minutes + 1000 * gametime.TotalGameTime.Seconds + gametime.TotalGameTime.Milliseconds));
             //Debug.WriteLine("huba = " + gametime.ElapsedGameTime.TotalSeconds);
             if (rnd.NextDouble() < TRASH_FREQUENCY * gametime.ElapsedGameTime.TotalSeconds)
@@ -177,7 +206,10 @@ namespace GarbageCollector
                 t.Type = rnd.Next(2) == 1 ? TrashType.ORGANIC : TrashType.INORGANIC;
                 t.Name = TrashImage.GetRandomImageName(t.Type);
                 t.RectDraw = TrashImage.GetSize(t.Name);
-                t.RectDraw = new Rectangle(800, rnd.Next(90, 500), t.RectDraw.Width, t.RectDraw.Height);
+                do
+                {
+                    t.RectDraw = new Rectangle(800, rnd.Next(90, 500), t.RectDraw.Width, t.RectDraw.Height);
+                } while (t.RectDraw.Intersects(trashbins[0].RectDraw) || t.RectDraw.Intersects(trashbins[1].RectDraw));
                 trashes.Add(t);
             }
 
